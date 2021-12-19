@@ -1,8 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+                                    /* CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+                                    /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -39,38 +35,73 @@ body {
 h1 {
   font-size: 3rem;
 }
-
+                                     /* Styling for App component */
 .App {
   height: calc(100vh - 7vh);
   width: 100vw;
   text-align: center;
 }
-nav {
+                                    /* Styling for Header/navbar component*/
+.header {
   height: 7vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2081C3;
+}
+nav {
   width: 50%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+.links {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #fff;
+}
+                                    /* Styling for the Homepage/landing page component */
 .homepage {
   height: inherit;
   width: inherit;
-  background-color: #AA5042;
 }
+                                    /* Styling for the Login component */
 .login {
+  position: relative;
+  top: 2%;
   height: inherit;
   width: inherit;
-  background-color: #753742;
 }
+.loginWrap {
+  height: 60%;
+  width: 35%;
+  margin: 0 auto;
+  border: 3px solid #2081C3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.loginTitle {
+  height: 10%;
+  font-size: 2.75rem;
+}
+form {
+  height: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+                                    /* Styling for the logout component */
 .logout {
   height: inherit;
   width: inherit;
-  background-color: #D8BD8A;
 }
+                                    /* Styling for the dashboard component */
 .dashboard {
   height: inherit;
   width: inherit;
-  background-color: #4F3130;
 }

@@ -5,10 +5,10 @@ export default function Header() {
     return (
         <div className='header'>
             <nav>
-            <Link to='/'>Home</Link>
-            <Link to='/login'>Login</Link>
-            <Link to='/logout'>Logout</Link>
-            <Link to='/dashboard'>Dashboard</Link>
+            <Link className='links' to='/'>Home</Link>
+            <Link className='links' to='/login'>Login</Link>
+            <Link className='links' to='/logout'>Logout</Link>
+            <Link className='links' to='/dashboard'>Dashboard</Link>
             </nav>
         </div>
     )
