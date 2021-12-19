@@ -14,6 +14,7 @@ function App() {
         <Route path='/login' component={Login} />
         <Route path='/logout' component={Logout} />
         <Route path='/dashboard' component={Dashboard} />
+        
     </div>
   );
 }
