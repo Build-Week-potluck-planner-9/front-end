@@ -2,6 +2,5 @@
 
 ## DO NOT FORK this repository, ONLY CLONE
 
-### checkout a branch that you are going to be working on and push to that branch
-        1. Commit regularly to your branch.
-        2. when the task you are working on is complete, push to your branch and submit a pull request. 
+### cd into front-end and create a branch with the name on the component you are working on. after that, cd into buildweek-potluck to work on your code.
+# MAKE SURE THAT YOU ARE PUSHING TO YOUR BRANCH ONLY AND NOT TO MAIN. ALL PUSHES MUST BE MADE INSIDE THE front-end branch, not the buildweek-potluck branch.
