@@ -36,8 +36,10 @@ body {
   font-size: 1rem;
   font-family: 'Quicksand', sans-serif;
 }
+h1 {
+  font-size: 3rem;
+}
 
 .App {
   text-align: center;
-  font-size: 4rem;
 }
