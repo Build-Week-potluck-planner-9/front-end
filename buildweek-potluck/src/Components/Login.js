@@ -25,7 +25,7 @@ export default function Login() {
                         <label>
                             <h5>Password:</h5>
                             <input 
-                                type='text'
+                                type='text' 
                                 name='password'
                                 onChange={handleChange}
                             />
