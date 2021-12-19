@@ -41,17 +41,36 @@ h1 {
 }
 
 .App {
+  height: calc(100vh - 7vh);
+  width: 100vw;
   text-align: center;
 }
-.header {
+nav {
   height: 7vh;
   width: 100%;
-}
-nav {
-  height: inherit;
   width: 50%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.homepage {
+  height: inherit;
+  width: inherit;
+  background-color: #AA5042;
+}
+.login {
+  height: inherit;
+  width: inherit;
+  background-color: #753742;
+}
+.logout {
+  height: inherit;
+  width: inherit;
+  background-color: #D8BD8A;
+}
+.dashboard {
+  height: inherit;
+  width: inherit;
+  background-color: #4F3130;
 }
