@@ -43,3 +43,15 @@ h1 {
 .App {
   text-align: center;
 }
+.header {
+  height: 7vh;
+  width: 100%;
+}
+nav {
+  height: inherit;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
