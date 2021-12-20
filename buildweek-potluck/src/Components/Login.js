@@ -1,4 +1,47 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+
+
+const StyledLogin = styled.div`
+    color: #ED732E;
+    background-color: #996236;
+    padding-bottom: auto;
+    text-align: center;
+
+    .login {
+        padding: 10%;    
+    }
+    .loginWrap {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .loginTitle{
+        padding-bottom: 5%;
+    }
+    h5{
+        padding: 5%;
+        text-align: center;
+    }
+    h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    button{
+        margin-top: 15%;
+        background-color: #9D221E;
+    }
+
+    button:hover {
+        background-color: #ED732E;
+    }
+
+    label h5{
+        text-align: center;
+    }
+`
+
 
 export default function Login() {
 
@@ -7,10 +50,11 @@ export default function Login() {
     }
 
     return (
+        <StyledLogin>
         <section className='login'>
             <div className='loginWrap'>
                 <div className='loginTitle'>
-                    <h2>Enter username and Password to continue</h2>
+                    <h2>Potluck Login</h2>
                 </div>
                     <form>
                         <label>
@@ -18,7 +62,7 @@ export default function Login() {
                             <input 
                                 type='text'
                                 name='username'
-                                placeholder='hotmale@hotmail'
+                                placeholder='Enter email here'
                                 onChange={handleChange}
                             />
                         </label>
@@ -27,6 +71,7 @@ export default function Login() {
                             <input 
                                 type='text' 
                                 name='password'
+                                placeholder='Enter password here'
                                 onChange={handleChange}
                             />
                         </label>
@@ -36,5 +81,6 @@ export default function Login() {
                     </form>
             </div>
         </section>
+        </StyledLogin>
     )
 }
