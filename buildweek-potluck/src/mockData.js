@@ -5,7 +5,7 @@ export default [
         name: 'Sandy\'s potluck',
         date: '11/11/2022',
         time: '7:00pm',
-        location: '1717 Doofus drive',
+        location: '151234 Doofus drive',
         selectedFood: [],
         unselectedFood: [],
         confirmed: false
@@ -49,7 +49,7 @@ export default [
         name: 'Klorply\'s potluck',
         date: '09/21/2022',
         time: '1:00pm',
-        location: '7619 clambo drive',
+        location: '31619 rondmond drive',
         selectedFood: [],
         unselectedFood: [],
         confirmed: false
