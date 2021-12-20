@@ -4,8 +4,11 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import Logout from './Components/Logout';
 import Dashboard from './Components/Dashboard';
-import './App.css';
+import EventPage from './Components/EventPage'
 import PrivateRoute from './Components/PrivateRoute';
+import './App.css';
+
+
 
 function App() {
 	return (
@@ -15,6 +18,7 @@ function App() {
 			<Route exact path='/home' component={Home} />
 
 			<Route exact path='/login' component={Login} />
+			<PrivateRoute exact path='/event-page' component={EventPage} />
 			<PrivateRoute exact path='/logout' component={Logout} />
 			<PrivateRoute exact path='/dashboard' component={Dashboard} />
 		</div>
