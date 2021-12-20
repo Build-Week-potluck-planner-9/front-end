@@ -16,8 +16,8 @@ function App() {
 			<Header />
 			<Route exact path='/' component={Home} />
 			<Route exact path='/home' component={Home} />
-
 			<Route exact path='/login' component={Login} />
+			
 			<PrivateRoute exact path='/event-page' component={EventPage} />
 			<PrivateRoute exact path='/logout' component={Logout} />
 			<PrivateRoute exact path='/dashboard' component={Dashboard} />
