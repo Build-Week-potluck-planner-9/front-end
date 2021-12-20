@@ -4,6 +4,7 @@ import Home from './Components/Home';
 import Login from './Components/Login'
 import Logout from './Components/Logout'
 import Dashboard from './Components/Dashboard'
+import EventPage from './Components/EventPage';
 import './App.css';
 
 function App() {
@@ -11,10 +12,15 @@ function App() {
       <div className="App">
           <Header />
           <Route exact path='/' component={Home} />
+
           <Route exact path='/home' component={Home} />
-          
+
+          <Route exact path='event-page' component={EventPage} />
+
           <Route exact path='/login' component={Login} />
+
           <Route exact path='/logout' component={Logout} />
+          
           <Route exact path='/dashboard' component={Dashboard} />
       </div>
   );
