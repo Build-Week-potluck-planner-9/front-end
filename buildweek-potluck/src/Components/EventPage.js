@@ -8,14 +8,16 @@ import { Link } from 'react-router-dom'
 export default function EventPage() {
 
     return (
+        <>
         <div className='event-page'>
             {/* Map through the mockData to display each event */}
                 {mockData.map(item => {
                     return <Event key={item.id} mockData={item}/>
                 })}
-                <div className='create-btn'>
-                    <Link to='/create-potluck'>Create new Potluck</Link>
-                </div>
         </div>
+                <div className='create-btn'>
+                    <Link to='/event-page/create-potluck'>Create new Potluck</Link>
+                </div>
+        </>
     )
 }

@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 
 const initialData = {
         img: '',
-        id: 1,
-        name: 'Sandy\'s potluck',
-        date: '11/11/2022',
-        time: '7:00pm',
-        location: '151234 Doofus drive',
+        id: Math.floor(Math.random() * 5000),
+        name: '',
+        date: '',
+        time: '',
+        location: '',
         selectedFood: [],
         unselectedFood: [],
         confirmed: false
@@ -15,10 +16,7 @@ const initialData = {
 
 export default function CreatePotluck() {
     const [data, setData] = useState(initialData);
-
-    useEffect(() => {
-
-    }, []);
+    const { push } = useHistory();
 
     const handleChange = (e) => {
         setData({
@@ -26,7 +24,6 @@ export default function CreatePotluck() {
             [e.target.name]: e.target.value
         })
     }
-
     const handleSubmit = (e) => {
         e.preventDefault();
     }
@@ -73,7 +70,7 @@ export default function CreatePotluck() {
                 </label>
                 <div>
                     <button>Create</button>
-                    <button>Cancel</button>
+                    <button onClick={() => { push('/event-page') }}>Cancel</button>
                 </div>
             </form>
         </div>
