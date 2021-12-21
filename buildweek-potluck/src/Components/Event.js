@@ -1,28 +1,18 @@
 // All imports here
-import React from 'react';
-import mockData from '../mockData';
+import React, { useState } from 'react';
 import '../App.css';
 
 // start Event component
 export default function Event(props) {
-    const { mockData } = props;
     return (
         <div className='event'>
+            <img src={props.mockData.img}></img>
             <div>
-            <h2>{props.mockData.name}</h2>
+                <h2>{props.mockData.name}</h2>
+                <h4>Time: <p>{props.mockData.time}</p></h4>
+                <h4>Date: <p>{props.mockData.date}</p></h4>
+                <h4>Location: <p>{props.mockData.location}</p></h4>
             </div>
-            <img src={props.mockData.img} alt='food image'></img>
-            <p>{props.mockData.date}</p>
-            <p>{props.mockData.time}</p>
-            <p>{props.mockData.location}</p>
-            <div className='selectedFood'>
-                {props.mockData.selectedFood}
-            </div>
-            <div className='unselectedFood'>
-                {props.mockData.unselectedFood}
-            </div>
-            <p>Will you be joining us?</p>
-            <button>Confirm</button>
         </div>
     )
 }
