@@ -126,14 +126,16 @@ h5 {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
+  overflow-x: hidden;
 }
 .event {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
-  height: 35%;
-  width: 28%;
+  height: 55%;
+  width: 30%;
+  margin: 3% 0;
   border: 3px solid black;
   border-radius: 5px;
 }
