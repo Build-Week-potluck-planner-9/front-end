@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axiosWithAuth from "../utils/axiosWithAuth";
 import { useHistory } from 'react-router-dom';
 
 export default function Login() {
@@ -23,8 +23,7 @@ export default function Login() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		axios
-			.post('http://localhost:9000/api/login', credentials)
+		axiosWithAuth().post("/login", credentials)
 			.then((res) => {
 				localStorage.setItem('token', res.data.token);
 				push('/home');
