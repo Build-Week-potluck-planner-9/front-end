@@ -48,7 +48,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2081C3;
+  background-color: #859D3C;
 }
 nav {
   width: 100%;
@@ -79,7 +79,7 @@ nav {
   height: 60%;
   width: 35%;
   margin: 0 auto;
-  border: 3px solid #2081C3;
+  border: 3px solid #ED732E;
   display: flex;
   flex-direction: column;
   align-items: center;
