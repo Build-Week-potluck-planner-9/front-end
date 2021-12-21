@@ -5,7 +5,6 @@ import '../App.css';
 
 // start Event component
 export default function Event(props) {
-    
     const { mockData } = props;
     return (
         <div className='event'>
