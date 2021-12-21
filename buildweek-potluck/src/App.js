@@ -21,7 +21,7 @@ function App() {
 			
 			<PrivateRoute exact path='/event-page' component={EventPage} />
 			<PrivateRoute exact path='/logout' component={Logout} />
-			<PrivateRoute exact path='/create-potluck' component={CreatePotluck} />
+			<PrivateRoute exact path='/event-page/create-potluck' component={CreatePotluck} />
 		</div>
 	);
 }
