@@ -112,11 +112,6 @@ h5 {
   height: inherit;
   width: inherit;
 }
-                                    /* Styling for the dashboard component */
-.dashboard {
-  height: inherit;
-  width: inherit;
-}
                                     /* Styling for the EventPage component */
 .event-page {
   height: 90%;
@@ -138,4 +133,7 @@ h5 {
   margin: 3% 0;
   border: 3px solid black;
   border-radius: 5px;
+}
+.event img {
+  height: 50%;
 }
