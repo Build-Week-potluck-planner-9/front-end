@@ -16,7 +16,7 @@ export default function EventPage() {
                 })}
         </div>
                 <div className='create-btn'>
-                    <Link to='/event-page/create-potluck'>Create new Potluck</Link>
+                    <Link className='links' to='/event-page/create-potluck'>Create new Potluck</Link>
                 </div>
         </>
     )

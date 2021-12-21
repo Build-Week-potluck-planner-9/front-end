@@ -31,7 +31,7 @@ export default function CreatePotluck() {
     return (
         <div className='create-potluck'>
             <h2>Create a new Potluck</h2>
-            <form onSubmit={handleSubmit}>
+            <form>
                 <label>
                     <h4>Event Name:</h4>
                     <input
@@ -68,11 +68,11 @@ export default function CreatePotluck() {
                         onChange={handleChange} 
                     />
                 </label>
-                <div>
-                    <button>Create</button>
-                    <button onClick={() => { push('/event-page') }}>Cancel</button>
-                </div>
             </form>
+            <div>
+                    <button className='links' onClick={handleSubmit}>Create</button>
+                    <button className='links' onClick={() => { push('/event-page') }}>Cancel</button>
+                </div>
         </div>
     )
 }

@@ -7,7 +7,7 @@ export default function Home() {
             <div className='homeWrap'>
                 <h1>Welcome to PotluckPlanner!</h1>
                 <div>
-                    <Link to='/event-page'>View Potlucks!</Link>
+                    <Link className='links' to='/event-page'>View Potlucks!</Link>
                 </div>
             </div>
         </section>
