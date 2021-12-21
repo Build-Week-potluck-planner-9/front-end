@@ -6,10 +6,8 @@ export default function Header() {
         <div className='header'>
             <nav>
             <Link className='links' to='/event-page'>Potlucks!</Link>
-            <Link className='links' to='/'>Home</Link>
             <Link className='links' to='/login'>Login</Link>
             <Link className='links' to='/logout'>Logout</Link>
-            <Link className='links' to='/dashboard'>Dashboard</Link>
             </nav>
         </div>
     )

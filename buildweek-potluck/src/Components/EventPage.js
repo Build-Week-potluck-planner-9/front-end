@@ -2,6 +2,7 @@
 import React from 'react'
 import Event from './Event'
 import mockData from '../mockData'
+import { Link } from 'react-router-dom'
 
 // Start EventPage component
 export default function EventPage() {
@@ -12,6 +13,9 @@ export default function EventPage() {
                 {mockData.map(item => {
                     return <Event key={item.id} mockData={item}/>
                 })}
+                <div className='create-btn'>
+                    <Link to='/create-potluck'>Create new Potluck</Link>
+                </div>
         </div>
     )
 }
