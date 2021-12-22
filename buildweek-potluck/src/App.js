@@ -3,7 +3,7 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Logout from './Components/Logout';
-import EventPage from './Components/EventPage'
+import EventPage from './Components/EventPage';
 import PrivateRoute from './Components/PrivateRoute';
 import CreatePotluck from './Components/CreatePotluck';
 import './App.css';
@@ -20,8 +20,8 @@ function App() {
 			<Route exact path='/home' component={Home} />
 			<Route exact path='/login' component={Login} />
 			
-			<PrivateRoute exact path='/event-page' component={EventPage} />
 			<PrivateRoute exact path='/logout' component={Logout} />
+			<PrivateRoute exact path='/event-page' component={EventPage} />
 			<PrivateRoute exact path='/event-page/create-potluck' component={CreatePotluck} />
 		</div>
 	);

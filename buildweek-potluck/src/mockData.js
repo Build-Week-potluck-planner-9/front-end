@@ -8,6 +8,7 @@ export default [
         location: '151234 Doofus drive',
         selectedFood: ['Chips & Dips'],
         unselectedFood: ['Salamander Strips', 'Turkey that is mad', 'some fish'],
+        attending: [],
         confirmed: false
     },
     {
@@ -19,6 +20,7 @@ export default [
         location: '1717 mondo drive',
         selectedFood: ['Chips & Dips'],
         unselectedFood: ['Salamander Strips', 'Turkey that is mad', 'some fish'],
+        attending: [],
         confirmed: false
     },
     {
@@ -30,6 +32,7 @@ export default [
         location: '9090 chundo drive',
         selectedFood: ['Chips & Dips'],
         unselectedFood: ['Salamander Strips', 'Turkey that is mad', 'some fish'],
+        attending: [],
         confirmed: false
     },
     {
@@ -41,6 +44,7 @@ export default [
         location: '7619 clambo drive',
         selectedFood: ['Chips & Dips'],
         unselectedFood: ['Salamander Strips', 'Turkey that is mad', 'some fish'],
+        attending: [],
         confirmed: false
     },
 ]
