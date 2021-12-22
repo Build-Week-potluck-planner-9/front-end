@@ -19,11 +19,13 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
                                     /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -44,6 +46,7 @@ h1 {
   height: calc(100vh - 7vh);
   width: 100vw;
   text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
 }
                                     /* Styling for Header/navbar component*/
 .header {
@@ -66,6 +69,10 @@ nav {
   font-size: 1.7rem;
   color: #000;
   padding: 0 2%;
+}
+.links:hover {
+  color: #98221E;
+  font-size: 1.8rem;
 }
                                     /* Styling for the Homepage/landing page component */
 .homepage {
