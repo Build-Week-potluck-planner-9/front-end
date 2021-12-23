@@ -4,6 +4,7 @@ import Event from './Event'
 import mockData from '../mockData'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { useState } from 'react';
 
 const EventPageStyles = styled.div`
     background-color: #F9F1D9;
@@ -23,15 +24,17 @@ export default function EventPage(props) {
     return (
         <EventPageStyles>
         <>
-        <div className='event-page'>
-            {/* Map through the mockData to display each event */}
-                {mockData.map(item => {
-                    return <Event key={item.id} mockData={item}/>
-                })}
+        <div className='eventPageContainer'>
+            <div className='event-page'>
+                {/* Map through the mockData to display each event */}
+                    {mockData.map(item => {
+                        return <Event key={item.id} mockData={item}/>
+                    })}
+            </div>
+            <div className='create-btn'>
+                        <Link className='links' to='/event-page/create-potluck'>Create new Potluck</Link>
+            </div>
         </div>
-                <div className='create-btn'>
-                    <Link className='links' to='/event-page/create-potluck'>Create new Potluck</Link>
-                </div>
         </>
         </EventPageStyles>
     )
