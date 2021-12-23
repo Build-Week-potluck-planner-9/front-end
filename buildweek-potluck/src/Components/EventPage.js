@@ -2,12 +2,19 @@
 import React from 'react'
 import Event from './Event'
 import mockData from '../mockData'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const EventPageStyles = styled.div`
+    background-color: #F9F1D9;
+    padding: 1%;
+`
 
 // Start EventPage component
 export default function EventPage() {
 
     return (
+        <EventPageStyles>
         <>
         <div className='event-page'>
             {/* Map through the mockData to display each event */}
@@ -19,5 +26,6 @@ export default function EventPage() {
                     <Link className='links' to='/event-page/create-potluck'>Create new Potluck</Link>
                 </div>
         </>
+        </EventPageStyles>
     )
 }
