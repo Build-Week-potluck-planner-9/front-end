@@ -1,5 +1,47 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
+
+const CreatePotluckStyles = styled.div`
+    background-color: #F9F1D9;
+    color: #858D3C;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+    
+    .create-potluck{
+        border: solid 2px orange;
+        padding: 4%;
+    }
+
+    h2{
+        font-size: 40px;
+        padding-bottom: 2%;
+    }
+
+    label{
+        padding-bottom: 6%;
+        padding-top: 6%;
+    }
+
+    .links{
+        margin: 1%;
+    }
+
+    button{
+        margin-top: 15%;
+        background-color: #859D3C;
+    }
+
+
+    button:hover{
+        background-color: #F8B12C;
+    }
+`
+
 
 
 const initialData = {
@@ -29,6 +71,7 @@ export default function CreatePotluck() {
     }
 
     return (
+        <CreatePotluckStyles>   
         <div className='create-potluck'>
             <h2>Create a new Potluck</h2>
             <form>
@@ -74,5 +117,6 @@ export default function CreatePotluck() {
                     <button className='links' onClick={() => { push('/event-page') }}>Cancel</button>
                 </div>
         </div>
+        </CreatePotluckStyles> 
     )
 }
