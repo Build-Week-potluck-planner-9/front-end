@@ -11,7 +11,14 @@ const EventPageStyles = styled.div`
 `
 
 // Start EventPage component
-export default function EventPage() {
+export default function EventPage(props) {
+    const [events, setEvents] = useState([])
+
+    // useEffect(() => {
+    //     axios.get()
+    //         .then(res => console.log(res))
+    //         .catch(err => console.log(err))
+    // }, []);
 
     return (
         <EventPageStyles>

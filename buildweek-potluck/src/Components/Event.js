@@ -1,6 +1,7 @@
 // All imports here
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { Link, useHistory, useParams } from 'react-router-dom';
 import '../App.css';
 import styled from 'styled-components';
 
@@ -15,6 +16,16 @@ const EditStyles = styled.div`
 
 // start Event component
 export default function Event(props) {
+    const  [eventData, setEventData] = useState('') 
+    const { id } = useParams();
+    const { push } = useHistory();
+
+    // useEffect(() => {
+    //     axios.get()
+    //         .then(res => console.log(res))
+    //         .catch(err => console.log(err))
+    // }, []);
+
     return (
         <EditStyles>
         <div className='event'>
