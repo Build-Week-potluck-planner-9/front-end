@@ -6,9 +6,8 @@ import Logout from './Components/Logout';
 import EventPage from './Components/EventPage';
 import PrivateRoute from './Components/PrivateRoute';
 import CreatePotluck from './Components/CreatePotluck';
+import Event from './Components/Event';
 import './App.css';
-
-
 
 
 
@@ -21,7 +20,8 @@ function App() {
 			<Route exact path='/login' component={Login} />
 			
 			<PrivateRoute exact path='/logout' component={Logout} />
-			<PrivateRoute exact path='/event-page' component={EventPage} />
+			<PrivateRoute exact path='/event-page' component={EventPage}/>	
+			<PrivateRoute exact path='/event-page/event' component={Event} />
 			<PrivateRoute exact path='/event-page/create-potluck' component={CreatePotluck} />
 		</div>
 	);
