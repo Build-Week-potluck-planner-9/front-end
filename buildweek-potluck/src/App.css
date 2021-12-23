@@ -134,7 +134,7 @@ h5 {
   justify-content: space-evenly;
   overflow-x: hidden;
 }
-.event {
+.event-item {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -145,7 +145,7 @@ h5 {
   border: 3px solid black;
   border-radius: 5px;
 }
-.event img {
+.event-item img {
   height: 40%;
   width: auto;
 }
