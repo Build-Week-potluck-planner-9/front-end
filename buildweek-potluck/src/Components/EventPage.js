@@ -9,6 +9,14 @@ import { useState } from 'react';
 const EventPageStyles = styled.div`
     background-color: #F9F1D9;
     padding: 1%;
+
+    .create-btn{
+        margin: 2rem 0;
+    }
+
+    .create-btn .links{
+        border: 3px solid #F8B12C;
+    }
 `
 
 // Start EventPage component
