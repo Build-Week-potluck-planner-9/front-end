@@ -30,6 +30,8 @@ const StyledLogin = styled.div`
     button{
         margin-top: 15%;
         background-color: #859D3C;
+		font-family: 'Gloria Hallelujah', cursive;
+		font-size: 1.9rem;
     }
 
     button:hover {

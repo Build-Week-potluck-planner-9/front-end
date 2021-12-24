@@ -42,6 +42,36 @@ const CreatePotluckStyles = styled.div`
     }
 `
 
+const StyledForm = styled.div`
+    background-color: #F9F1D9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .create-potluck{
+        width: 80%
+    }
+
+    h2{
+        font-weight: bold;
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+
+    h4{
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    
+    form{
+        width: 100%
+    }
+
+    button{
+        font-family: 'Gloria Hallelujah', cursive;
+        margin: 0 2rem;
+    }
+`
 
 
 const initialData = {
@@ -72,6 +102,7 @@ export default function CreatePotluck() {
 
     return (
         <CreatePotluckStyles>   
+        <StyledForm>
         <div className='create-potluck'>
             <h2>Create a new Potluck</h2>
             <form>
@@ -117,6 +148,8 @@ export default function CreatePotluck() {
                     <button className='links' onClick={() => { push('/event-page') }}>Cancel</button>
                 </div>
         </div>
+          </StyledForm>
         </CreatePotluckStyles> 
+        
     )
 }
