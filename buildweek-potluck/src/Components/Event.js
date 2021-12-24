@@ -1,30 +1,43 @@
 // All imports here
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import '../App.css';
+import { useParams } from 'react-router-dom';
 
 // start Event component
-export default function Event(props) {
-    const {events} = props;
+const Event = (props) => {
+   const {event, setEvent} = useState('');
+   const { id } = useParams();
 
-    return(
-        <div className="event">
-            <h2>{events.name}</h2>
-            <img src={events.img} alt=''></img>
-            <div className='infoContainer'>
-                <div className='info'>
-                    <h4>{events.time}</h4>
-                    <h4>{events.date}</h4>
-                    <h4>{events.location}</h4>
+
+   useEffect(() => {
+        axios.get(`https://potluckbw.herokuapp.com/api/auth/${id}`)
+            .then(res => {
+                setEvent(res.data)
+            })
+            .catch(err => console.log(err))
+    }, [id])
+
+   return(
+        <div key={event.id} className="event">
+            <h2>{event.name}</h2>
+            <img src={event.img} alt=''></img>
+                <div className='infoContainer'>
+                    <div className='info'>
+                        <h4>{event.time}</h4>
+                        <h4>{event.date}</h4>
+                        <h4>{event.location}</h4>
+                    </div>
                 </div>
-            </div>
-            {/* <div className="foodList">
+            <div className="foodList">
                 <h3>Here is what we have:</h3>
-                <p>{selectedFood}</p>
+                <p>{event.selectedFood}</p>
                 <br />
                 <h3>Here is what we need:</h3>
-                <p>{unselectedFood}</p>
-            </div> */}
+                <p>{event.unselectedFood}</p>
+            </div>
         </div>
-    )
-
+   )
 }
+
+export default Event;
