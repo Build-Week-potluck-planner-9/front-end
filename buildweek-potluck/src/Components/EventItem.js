@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 const EditStyles = styled.div`
-    height: 100%;
-    width: 35%;
+    height: 90vh;
+    width: 40%;
     background-color: #F9F1D9;
     color: #858d3C;
     border: 3px solid #F8B12C;
@@ -12,9 +12,16 @@ const EditStyles = styled.div`
     margin-bottom: 1%;
     margin-right: 1%;
 
+    .event{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     img {
         height: auto;
-        width: 50%;
+        width: 60%;
     }
 
     h2{
@@ -61,7 +68,28 @@ const EditStyles = styled.div`
         font-weight: bold;
         font-size: 2rem;
     }
-`
+
+    .infoContainer{
+        width: 100%;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    .foodList{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foodList h3{
+        text-decoration: underline;
+        margin-bottom: 1.5rem;
+    }
+    `
 
 const EventItem = (props) => {
     const { img, 
@@ -82,14 +110,17 @@ return(
             <img src={img} alt=''></img>
             <div className='infoContainer'>
                 <div className='info'>
-                    <h4>{time}</h4>
-                    <h4>{date}</h4>
-                    <h4>{location}</h4>
+                    <h4><span>Time:</span><span> {time}</span></h4>
+                    <h4><span>Date:</span> <span>{date}</span></h4>
+                    <h4><span>Location:</span> <span>{location}</span></h4>
                 </div>
             </div>
+
+            
             <div className="foodList">
                 <h3>Here is what we have:</h3>
                 <p>{selectedFood.join('. ')}</p>
+                 
                 <br />
                 <h3>Here is what we need:</h3>
                 <p>{unselectedFood.join('. ')}</p>

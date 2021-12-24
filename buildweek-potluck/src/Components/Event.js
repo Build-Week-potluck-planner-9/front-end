@@ -3,6 +3,13 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../App.css';
 import { useParams } from 'react-router-dom';
+import styled from 'styled-components';
+
+const EventStyle = styled.div`
+    height: 100%;
+    width: 100%;
+    background-color: #F9F1D9;
+`
 
 // start Event component
 const Event = (props) => {
@@ -19,6 +26,7 @@ const Event = (props) => {
     }, [id])
 
    return(
+       <EventStyle>
         <div key={event.id} className="event">
             <h2>{event.name}</h2>
             <img src={event.img} alt=''></img>
@@ -37,6 +45,7 @@ const Event = (props) => {
                 <p>{event.unselectedFood}</p>
             </div>
         </div>
+        </EventStyle>
    )
 }
 
