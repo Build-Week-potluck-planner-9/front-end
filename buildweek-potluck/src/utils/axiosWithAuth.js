@@ -4,7 +4,7 @@ import axios from 'axios';
 const axiosWithAuth = () => {
 	const token = localStorage.getItem('token');
 	return axios.create({
-		baseURL: 'http://localhost:9000/api',
+		baseURL: 'https://potluckbw.herokuapp.com/api',
 		headers: {
 			'Content-Type': 'application/json',
 			Authorization: `${token}`
