@@ -1,12 +1,15 @@
 // All imports here
 import React from 'react'
 import Event from './Event'
-import mockData from '../mockData'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useState } from 'react';
+import EventItem from './EventItem';
 
 const EventPageStyles = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #F9F1D9;
     padding: 1%;
 
@@ -21,26 +24,17 @@ const EventPageStyles = styled.div`
 
 // Start EventPage component
 export default function EventPage(props) {
-    const [events, setEvents] = useState([])
-
-    // useEffect(() => {
-    //     axios.get()
-    //         .then(res => console.log(res))
-    //         .catch(err => console.log(err))
-    // }, []);
+    const { events } = props;
 
     return (
         <EventPageStyles>
         <>
         <div className='eventPageContainer'>
             <div className='event-page'>
-                {/* Map through the mockData to display each event */}
-                    {mockData.map(item => {
-                        return <Event key={item.id} mockData={item}/>
-                    })}
+                {events.map(event => <EventItem key={event.id} event={event} />)}
             </div>
             <div className='create-btn'>
-                        <Link className='links' to='/event-page/create-potluck'>Create new Potluck</Link>
+                        <Link className='links' to='/create-potluck'>Create new Potluck</Link>
             </div>
         </div>
         </>
