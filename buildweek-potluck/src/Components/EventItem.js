@@ -89,10 +89,10 @@ return(
             </div>
             <div className="foodList">
                 <h3>Here is what we have:</h3>
-                <p>{selectedFood}</p>
+                <p>{selectedFood.join('. ')}</p>
                 <br />
                 <h3>Here is what we need:</h3>
-                <p>{unselectedFood}</p>
+                <p>{unselectedFood.join('. ')}</p>
             </div>
             <Link to={`/event/${id}`}>View Event</Link>
         </div>

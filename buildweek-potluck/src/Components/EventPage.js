@@ -23,7 +23,7 @@ const EventPageStyles = styled.div`
 `
 
 // Start EventPage component
-export default function EventPage(props) {
+const EventPage = (props) => {
     const { events } = props;
 
     return (
@@ -41,3 +41,5 @@ export default function EventPage(props) {
         </EventPageStyles>
     )
 }
+
+export default EventPage;
