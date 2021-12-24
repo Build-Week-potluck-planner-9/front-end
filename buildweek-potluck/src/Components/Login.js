@@ -29,6 +29,8 @@ const StyledLogin = styled.div`
     button{
         margin-top: 15%;
         background-color: #9D221E;
+		font-family: 'Gloria Hallelujah', cursive;
+		font-size: 1.9rem;
     }
 
     button:hover {
