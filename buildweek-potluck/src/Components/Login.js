@@ -8,6 +8,7 @@ const StyledLogin = styled.div`
     background-color: #F9F1D9;
     text-align: center;
 	min-height: 100%;
+	
 
     .login {
         padding: 10%;    
@@ -28,13 +29,13 @@ const StyledLogin = styled.div`
     }
     button{
         margin-top: 15%;
-        background-color: #9D221E;
+        background-color: #859D3C;
 		font-family: 'Gloria Hallelujah', cursive;
 		font-size: 1.9rem;
     }
 
     button:hover {
-        background-color: #ED732E;
+        background-color: #F8B12C;
     }
 
     label h5{
