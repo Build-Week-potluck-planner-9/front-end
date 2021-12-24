@@ -94,7 +94,7 @@ return(
                 <h3>Here is what we need:</h3>
                 <p>{unselectedFood}</p>
             </div>
-            <Link to='/event/:id'>View Event</Link>
+            <Link to={`/event/${id}`}>View Event</Link>
         </div>
     </EditStyles>
   )

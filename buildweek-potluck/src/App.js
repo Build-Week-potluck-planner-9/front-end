@@ -25,7 +25,9 @@ function App(props) {
 			<Route exact path='/event-page'>
 				<EventPage {...props} events={events} />
 			</Route>
-			<Route exact path='/event/:id' component={Event} />
+			<Route exact path='/event/:id'>
+				<Event events={events} />
+			</Route>
 			<Route exact path='/create-potluck' component={CreatePotluck} />
 		</div>
 	);
